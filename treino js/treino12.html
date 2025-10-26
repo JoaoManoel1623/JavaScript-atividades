@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let nota1 = +prompt("Digite a primeira nota:");
+      let nota2 = +prompt("Digite a segunda nota:");
+      let nota3 = +prompt("Digite a terceira nota:");
+
+        let media = (nota1 + nota2 + nota3) / 3;
+
+        if (media >= 70) {
+            alert("ALUNO APROVADO. Sua média é " + media.toFixed(2));
+        } 
+        else if (media >= 50 && media < 70) {
+            alert("ALUNO EM RECUPERAÇÃO. Sua média é " + media.toFixed(2));
+        }
+        else {
+            alert("ALUNO REPROVADO. Sua média é " + media.toFixed(2));
+        }
+    </script>
+  </body>
+</html>
