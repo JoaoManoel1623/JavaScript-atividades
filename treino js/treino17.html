@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let produto = +prompt("Você é um vendedor e comprou uma mercadoria, quanto essa mercadoria custou?");
+
+        if (produto < 20 ) {
+            let venda = produto + (produto * 0.45);
+            alert("O valor de venda do produto é: R$" + venda.toFixed(2)+"(45% de lucro)");
+        } 
+        else {
+            let venda = produto + (produto * 0.30);
+            alert("O valor de venda do produto é: R$" + venda.toFixed(2)+ "(30% de lucro)");
+            
+        }
+    </script>
+</body>
+</html>

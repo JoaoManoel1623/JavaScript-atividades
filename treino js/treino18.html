@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let temp1 = prompt(
+        "Digite a primeira temperatura, K para kelvin, F para Farhenreit e C para Celsius (LETRA MAIÚSCULA):"
+      );
+      let temp2 = +prompt(
+        "Digite a segunda temperatura, mesma coisa, K para kelvin, F para Farhenreit e C para Celsius (LETRA MAIÚSCULA):"
+      );
+      let valor = +prompt("Digite o valor da temperatura a ser convertida:");
+
+      let resultado;
+
+      if (temp1 === "F") {
+        valor = ((valor - 32) * 5) / 9;
+      } else if (temp1 === "K") {
+        valor = valor - 273.15;
+      }
+
+      
+      if (temp2 === "F") {
+        resultado = (valor * 9) / 5 + 32;
+        alert("A temperatura convertida é: " + resultado.toFixed(2));
+      } else if (temp2 === "K") {
+        resultado = valor + 273.15;
+        alert("A temperatura convertida é: " + resultado.toFixed(2));
+      }
+      else {
+        alert("A temperatura convertida é: " + valor.toFixed(2));
+      }
+    </script>
+  </body>
+</html>
